@@ -1,0 +1,742 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 10;
+    cout <<"Enter Your Reg No."<<a;
+    
+    return 0;
+}
+ -------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    int b; 
+    cout <<"Enter Your Reg No: Harsha.";
+    cin >> a;
+    cout <<"Enter Your Frds Reg No.";
+    cin >> b;
+    cout <<"Harsha Your Reg No is:"<<a<<endl;
+    cout <<"Your Frds Reg No is;"<<b;
+    
+    return 0;
+}
+
+----------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+ int main() 
+ {
+     int a=10;
+     if (a > 15)
+{
+    cout << "a is greater than 15";
+}
+else
+{
+     cout <<a<< " is less than 15";
+}
+     return 0;
+}
+
+------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+ int main() 
+ {
+     int a;
+    cout << "Enter a number ;";
+    cin >> a;
+    if (a%2 == 0)
+    {
+        cout << a << " is even!";
+    }
+    else
+    {
+        cout << a << " is odd!";
+}
+     return 0;
+}
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+varibales >>>> In C++ Are used to store data and manipulated throught a program
+Data types in C++
+Data types help the complier allocate the appropriate amount of memory and determine how to interpret the data .
+int >>>> these are used to store integer value (whole number)
+i.e 1,2,3,4,
+
+flot>>> used to store decimal values (single precision) >>> i.e
+10.4,7.7
+
+double >>>(double precision) i.e 10.777 , 5.764
+
+char >>>used to store a single character i.e A , D.
+
+string >> Is a sequence of characters i.e "Hello">>> 'Hello'>>"Hello"
+
+--------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 10,b = 20;
+    cout<<"Addition :"<< a + b<<endl;
+    
+    cout<<"substraction :"<< a - b <<endl;
+    // (+ , - , * , / ,%)
+    return 0;
+}
+
+-----------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+ int main() {
+     string name;
+     int age;
+     float height;
+     double weight;
+     char blood_group;
+     
+     cout << "Enter Your name: ";
+     cin >> name;
+     
+     cout << "Enter Your age: ";
+     cin >> age;
+     
+     cout << "Enter Your height (in feet): ";
+     cin >> height;
+     
+     cout << "Enter Your weight (in Kg): ";
+     cin >> weight;
+     
+     cout << "Enter Your blood group (A/B/O): ";
+     cin >> blood_group;
+      
+     cout << "\n--- User Information ---" << endl;
+     cout << "Name: " << name << endl;
+     cout << "Age: " << age << endl;
+     cout << "Height: " << height << endl;
+     cout << "Blood Group: " << blood_group << endl;
+     
+     return 0;
+}
+
+--------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+ int main() {
+     
+     int a=10;
+     int b=20;
+     
+      cout << "logical AND exp1: " << (a > 5 && a < 20) << endl;
+      cout << "logical AND exp2: " << (a > 5 && a < 15) << endl;
+      cout << "logical or exp1: " << (a > 0 || b < 0) << endl;
+      cout << "logical NOT : " << !(a>0)<< endl;
+      
+     return 0;
+}
+
+--------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+ int main() 
+ {
+     int a=10;
+     if (a > 25)
+{
+    cout << "a is greater than 25";
+}
+    cout << "a is less than 25";
+    
+     return 0;
+}
+
+-----------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+ int main() {
+     
+     int num1 ,num2 ,num3;
+    cout << "Enter three number :";
+    cin >> num1>>num2>>num3;
+    
+    //Find the largest number out of
+   if (num1 >= num2 && num1 >=num3)
+   {
+       cout << num1 << "is the largest number"<<endl;
+   }
+   else if (num2 >= num1 && num2 >= num3)
+   {
+       cout << num2 << "is the largest number"<<endl;
+   }
+   else
+   { 
+       cout << num3 << "is the largest number"<<endl;
+   }
+    return 0;
+ }
+
+--------------------------------------------------------------------------------------------------
+
+Loop in C++
+Loop in C++.
+ are used to execute a blockof code repeatedly until a certain comdition is met , They help in manage repetitive task.
+1. for Loop; Used when the number of iterations is know beforehand.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Function in C++ .
+A function in C++ is a group of statements that performa specific task and acn be resude anywhere in the program.
+
+
+1.Reusability - Large program are divided into smaller parts.
+
+---------------------------------------------------------------------------------------------------
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+ // Function Defination
+ int add(int a , int b) //passing paraneters
+ {
+     return a + b; //Returning the value
+ }
+
+ int mul(int a, int b)
+ {
+     return a + b;
+ }
+ int sub(int a , int b)
+ {
+     return a - b;
+ }
+ int main()
+ {
+     cout<<"Addition ;"<<add(5,10)<<endl;
+     cout<<"Multiplication ;"<<mul(5,10)<<endl;
+     cout<<"subtraction: " << sub(10,5)<<endl; // optional
+     cout<<"Division :"<<divi(5,10)<<endl;
+     
+     return 0;
+ }
+--------------------------------------------------------------------------------------------------------
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day;
+    cout << "Enter a number (1-7) corresponding to the day of the week: ";
+    cin >> day;
+
+    // switch statement to determine the day of the week
+    switch(day) {
+        case 1:
+            cout << "Monday" << endl;
+            break;
+        case 2:
+            cout << "Tuesday" << endl;
+            break;
+        case 3:
+            cout << "Wednesday" << endl;
+            break; 
+        case 4:
+            cout << "Thursday" << endl;
+            break;
+        case 5:
+            cout << "Friday" << endl;
+            break;
+        case 6:
+            cout << "Saturday" << endl;
+            break;
+        case 7:
+            cout << "Sunday" << endl;
+            break;
+        default:
+            cout << "Invalid input! Please enter a number between 1 and 7." << endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+class car {
+    string brand;
+    string model;
+    int price;
+    int year;
+};
+
+int main() {
+  Car car1; //Creating an abject of the class
+  car
+  car1.brand = "LAMBO";
+  Car1.model = "S-Class";
+  car1.price = "50000000"
+  car1.Year =
+    
+    
+    // Write C++ code here
+    std::cout << "Try programiz.pro";
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+class car {
+public:
+    string brand;
+    string model;
+    int price;
+    int year;
+};
+
+int main() {
+    car car1; // Creating an object of the class
+
+    car1.brand = "LAMBO";
+    car1.model = "S-Class";
+    car1.price = 500000;
+    car1.year = 2025;
+
+    cout << car1.brand << endl;
+    cout << car1.model << endl;
+    cout << car1.price << endl;
+    cout << car1.year << endl;
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+class car {
+public:
+    string brand;
+    string model;
+    int price;
+    int year;
+};
+
+int main() {
+    car car1; // Creating first object of the class
+    car1.brand = "LAMBO";
+    car1.model = "S-Class";
+    car1.price = 500000;
+    car1.year = 2025;
+
+    cout << car1.brand << endl;
+    cout << car1.model << endl;
+    cout << car1.price << endl;
+    cout << car1.year << endl;
+
+    cout << "-car 2" << endl;
+
+    car car2; // Creating second object of the class
+    car2.brand = "TESLA";
+    car2.model = "Model X";
+    car2.price = 120000;
+    car2.year = 2024;
+
+    cout << car2.brand << endl;
+    cout << car2.model << endl;
+    cout << car2.price << endl;
+    cout << car2.year << endl;
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <string>  
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string subject;
+    int experience;
+
+    void display() {
+        cout << "Teacher name is: " << name << endl;
+        cout << "Subject is: " << subject << endl;
+        cout << "Experience (Years): " << experience << endl;
+    }
+};
+
+int main() {
+    Teacher t1;
+
+    cout << "Enter teacher name: ";
+    getline(cin, t1.name);
+
+    cout << "Enter subject: ";
+    getline(cin, t1.subject);
+
+    cout << "Enter experience in years: ";
+    cin >> t1.experience;
+
+    cout << "\nTeacher details:\n";
+    t1.display();
+
+    return 0;
+}
+
+---------------------------------------------------------------------------
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Teacher {
+public:
+    string name;
+    string subject;
+    string gender;
+    int experience;
+
+    void display() {
+        cout << "Teacher name: " << name << endl;
+        cout << "Gender: " << gender << endl;
+        cout << "Subject: " << subject << endl;
+        cout << "Experience (Years): " << experience << endl;
+    }
+};
+
+int main() {
+    Teacher t1, t2;
+
+    // --- Teacher 1 ---
+    cout << "Enter details for Teacher 1:\n";
+    cout << "Enter teacher name: ";
+    getline(cin, t1.name);
+
+    cout << "Enter gender: ";
+    getline(cin, t1.gender);
+
+    cout << "Enter subject: ";
+    getline(cin, t1.subject);
+
+    cout << "Enter experience in years: ";
+    cin >> t1.experience;
+    cin.ignore(); 
+
+    cout << "Enter details for Teacher 2:";
+    cout << "Enter teacher name: ";
+    getline(cin, t2.name);
+
+    cout << "Enter gender: ";
+    getline(cin, t2.gender);
+
+    cout << "Enter subject: ";
+    getline(cin, t2.subject);
+
+    cout << "Enter experience in years: ";
+    cin >> t2.experience;
+
+    
+    cout << "--- Teacher Details ---";
+    cout << "Teacher 1:";
+    t1.display();
+
+    cout << "Teacher 2:";
+    t2.display();
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+class Teacher{
+    private :
+    //Data members
+    string name;
+    string subject;
+    int year;
+    public :
+            void setdetail(string tname, string tsubject , int tyear) 
+            {
+                name = tname;
+                subject = tsubject;
+                year = tyear;
+            }
+        //member fuction
+        void display()
+    {
+        cout << " Name: " << name
+             << " Subject: " << subject
+             << " Year: " << year << endl;
+        
+    }
+};     
+     int main() {
+         //create 2 object
+         Teacher t1, t2, t3;
+         //Assign values to object
+         /*t1.name = "Samantha";
+         t1.subject = "Biology";
+         t1.year = 9; */
+         
+         t1.setdetail("Harsha", "Biology",9);
+         t2.setdetail("Akshith", "CS",4);
+         t3.setdetail("Rohan", "CS",7);
+         
+         t1.display();
+         t2.display();
+         t3.display();
+         return 0;
+         
+     }
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+ using namespace std;
+ 
+ class Teacher{
+     public:
+     string name;
+     string dept;
+     int experience;
+     double salary;
+     
+     //constructor
+     Teacher()
+     {
+         name = "Arjun";
+         dept = "computer science";
+         experience = 10;
+         salary = 75000;
+     }
+     void displayinfo()
+     {
+         cout << " Teacher name : " <<name<<endl;
+         cout << " Department : " <<dept<<endl;
+         cout << " Experience : " <<experience<<endl;
+         cout << " Salary : " <<salary<<endl;
+     }
+ };
+     
+     int main()
+     {
+         Teacher T1;//create an object
+         T1.displayinfo();
+      return 0;
+  }
+ 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+ using namespace std;
+ 
+ class Teacher{
+     public:
+     string name;
+     string dept;
+     int experience;
+     int salary;
+     
+     //constructor
+     Teacher(string n, string d, int e, int s)
+    
+     {
+         cout << " Teacher name : " <<n<<endl;
+         cout << " Department : " <<d<<endl;
+         cout << " Experience : " <<e<<endl;
+         cout << " Salary : " <<s<<endl;
+         
+     }
+ };
+     
+     int main()
+     {
+         Teacher T1("Arjun","CSE",10,75000);//create an object
+         cout<<endl;
+         Teacher T2("Dhanush","Maths",7,80000);  
+     }
+
+-----------------------------------------------------------------------------------------------------------
+
+// 
+#include <iostream>
+ using namespace std;
+ 
+ class Movie{
+     public:
+     string title;
+     string director;
+     double duration;
+     double collection;
+     
+     Movie(string t, string d, double r,double c)
+     
+     {
+         cout << "Movie Title :"<<t<<endl;
+         cout << "Director :"<<d<<endl;
+         cout << "Duration :"<<"213min"<<endl;
+         cout << "Collection :"<<"203Cr"<<endl;
+     }
+ };    
+    
+       int main()
+       {
+           Movie M1("Chetrapati","S.S.Rajamouli",213,203);
+            return 0;
+           
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+// 
+#include <iostream>
+ using namespace std;
+ 
+ class Parent
+ {
+     public:
+     void food()
+ {
+     cout << "Inherited,burger" ; }
+ };
+  class child : public parent // creating the child clss and inheriting
+       it 
+       { };
+       
+       int main()
+       {
+           child b;
+           b.food();
+           return 0;
+       }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
